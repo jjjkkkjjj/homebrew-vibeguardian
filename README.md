@@ -1,17 +1,17 @@
-# homebrew-vibesafer
+# homebrew-vibeguardian
 
-Homebrew tap for [vibesafer](https://github.com/jjjkkkjjj/vibesafer).
+Homebrew tap for [vibeguardian](https://github.com/jjjkkkjjj/vibeguardian).
 
 ## Install
 
 ```bash
-brew tap jjjkkkjjj/vibesafer
-brew install vibesafer
+brew tap jjjkkkjjj/vibeguardian
+brew install vibeguardian
 ```
 
 ## How the formula stays up to date
 
-When a new release tag is pushed to the main `vibesafer` repo, its CI:
+When a new release tag is pushed to the main `vibeguardian` repo, its CI:
 
 1. Builds binaries for macOS (ARM + Intel) and Linux
 2. Uploads versioned **and** version-free tarballs to GitHub Releases
@@ -26,4 +26,4 @@ The `update-formula.yml` workflow in this repo then:
 
 ## Required secret
 
-Add a GitHub Personal Access Token (PAT) with `Contents: write` permission on **this repo** as a secret named `HOMEBREW_TAP_TOKEN` in **both** this repo (for the push in `update-formula.yml`) and in the main `vibesafer` repo (for the `repository_dispatch` request).
+Add a GitHub Personal Access Token (PAT) with `Contents: write` permission on **this repo** as a secret named `HOMEBREW_TAP_TOKEN` in **both** this repo (for the push in `update-formula.yml`) and in the main `vibeguardian` repo (for the `repository_dispatch` request).
